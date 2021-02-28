@@ -1,0 +1,86 @@
+ body {
+            background: #565151;
+        }
+
+        .dial {
+            /*background-image: radial-gradient(yellow, #f06d06);*/
+            border: 5px solid seagreen;
+            border-radius: 20%;
+            height: 400px;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            width: 400px;
+
+        }
+
+        .hand,
+        .mid {
+            position: absolute;
+        }
+
+        .mid {
+            background: red;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+
+        }
+
+        .hand{
+            transform-origin: 0;
+        }
+        .secs {
+            height: 3px;
+            width: 100px;
+            background: white;
+            top: calc(50% - 2px);
+            left: calc(50%);
+        }
+
+        .mins {
+            height: 4px;
+            width: 125px;
+            background: yellow;
+            top: calc(50% - 2px);
+            left: calc(50%);
+        }
+
+        .hours {
+            height: 8px;
+            width: 90px;
+            background: blue;
+            top: calc(50% - 4px);
+            left: calc(50%);
+        }
+
+        .dial {
+         /* width: 100px;
+          height: 100px;*/
+          background-color: #ff78003b;
+          animation-name: example;
+          animation-duration: 8s;
+        }
+
+        @keyframes example {
+            0% {background-color: red;}
+            2% {background-color: pink;}
+            4% {background-color: blue;}
+            8% {background-color: green;}
+            10% {background-color: yellow;}
+            12% {background-color: #007fff;}
+            14% {background-color: #89CFF0;}
+            16% {background-color: #CD7F32;}
+            18% {background-color: #964B00;}
+            20% {background-color: #7FFF00;}
+            22% {background-color: #50C878;}
+            24% {background-color: #800000;}
+            26% {background-color: #D1E231;}
+            28% {background-color: #483C32;}
+            30% {background-color: #40826D;}
+            32% {background-color: #FFAD33;}
+            34% {background-color: #698EA5;}
+            36% {background-color: #8E56A7;}
+            }
